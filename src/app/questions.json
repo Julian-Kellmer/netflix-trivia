@@ -1,0 +1,159 @@
+{
+	"easy": [
+		{
+			"question": "¿Cuántos integrantes conforman el grupo en Friends?",
+			"options": [
+				{ "option": "5", "image": "/facil/1/friends5.jfif" },
+				{ "option": "7", "image": "/facil/1/friends6.jfif" },
+				{ "option": "6", "image": "/facil/1/friends7.jfif" }
+			],
+			"answer": "6",
+			"logo":"/logo/friendsLogo.png"
+		},
+		{
+			"question": "¿Cómo se llama el cerebro detrás del atraco a la Fábrica Nacional de Moneda y Timbre?",
+			"options": [
+				{ "option": "Berlín", "image": "/facil/2/profesor1.jfif" },
+				{ "option": "El Profesor", "image": "/facil/2/profesor2.jfif" },
+				{ "option": "Denver", "image": "/facil/2/profesor3.jfif" }
+			],
+			"answer": "El Profesor",
+			"logo":"/logo/casaDePapelLogo.png"
+		},
+		{
+			"question": "¿De qué ciudad inglesa es originario la familia Shelby?",
+			"options": [
+				{ "option": "Londres", "image": "/facil/3/birmingham.jfif" },
+				{ "option": "Birmingham", "image": "/facil/3/londres.jfif" },
+				{ "option": "Liverpool", "image": "/facil/3/liverpool.jfif" }
+			],
+			"answer": "Birmingham",
+			"logo":"/logo/peakeBlindersLogo.png"
+		},
+		{
+			"question": "¿Qué color suele usar Walter White en sus trajes de laboratorio?",
+			"options": [
+				{ "option": "Amarillo", "image": "/facil/4/trajeVerde.jpg" },
+				{ "option": "Blanco", "image": "/facil/4/trajesAzul.png" },
+				{ "option": "Verde", "image": "/facil/4/trajeBlanco.jfif" }
+			],
+			"answer": "Amarillo",
+			"logo":"/logo/BreakingBadLogo.png"
+		},
+		{
+			"question": "¿Cómo se llama la recepcionista de Dunder Mifflin Paper Company?",
+			"options": [
+				{ "option": "Jan", "image": "/facil/5/pam1.webp" },
+				{ "option": "Karen", "image": "/facil/5/pam2.webp" },
+				{ "option": "Pam", "image": "/facil/5/pam3.jpg" }
+			],
+			"answer": "Pam",
+			"logo":"/logo/theOficceLogo.png"
+		},
+	
+		{
+			"question": "¿Cuál es el primer juego que juegan los participantes en Juego del Calamar?",
+			"options": [
+				{ "option": "Gganbu", "image": "/intermedio/1/game2.webp" },
+				{ "option": "Luz Roja, Luz Verde", "image": "/intermedio/1/game1.jpg" },
+				{ "option": "Dalgona", "image": "/intermedio/1/game3.jpg" }
+			],
+			"answer": "Luz Roja, Luz Verde",
+			"logo":"/logo/juegosDelCalamarLogo.png"
+		},
+		{
+			"question": "¿En qué asignatura suele destacarse Maeve Wiley?",
+			"options": [
+				{ "option": "Historia", "image": "/intermedio/2/meave1.webp" },
+				{ "option": "Literatura", "image": "/intermedio/2/meave2.webp" },
+				{ "option": "Física", "image": "/intermedio/2/meave3.jpeg" }
+			],
+			"answer": "Literatura",
+			"logo":"/logo/sexEducationLogo.png"
+		},
+		{
+			"question": "¿Cómo se llama el monstruo que aparece en la primer temporada?",
+			"options": [
+				{ "option": "Demogorgon", "image": "/intermedio/3/demorgorgon1.webp" },
+				{ "option": "Demoghorgon", "image": "/intermedio/3/demorgorgon2.webp" },
+				{ "option": "Demogorghon", "image": "/intermedio/3/demorgorgon3.webp" }
+			],
+			"answer": "Demogorgon",
+			"logo":"/logo/StrangerThingsLogo.png"
+		},
+		{
+			"question": "¿En qué estado de EE.UU se desarrolla principalmente la historia de Ozark?",
+			"options": [
+				{ "option": "Misuri", "image": "/intermedio/4/nevada.png" },
+				{ "option": "Wisconsin", "image": "/intermedio/4/wisconsin.png" },
+				{ "option": "Texas", "image": "/intermedio/4/texas.webp" }
+			],
+			"answer": "Misuri",
+			"logo":"/logo/ozarkLogo.png"
+		},
+		{
+			"question": "¿Cómo se llama el hijo de Love y Joe?",
+			"options": [
+				{ "option": "Henry", "image": "/intermedio/5/you1.webp" },
+				{ "option": "Thomas", "image": "/intermedio/5/you2.jpg" },
+				{ "option": "Michael", "image": "/intermedio/5/you3.webp" }
+			],
+			"answer": "Henry",
+			"logo":"/logo/youLogo.png"
+		},
+	
+		{
+			"question": "¿Quién es el primer asesino en serie con el que Holden y Bill hablan en la serie?",
+			"options": [
+				{ "option": "Paul Bateson", "image": "/dificil/1/killer3.jpg" },
+				{ "option": "Charles Manson", "image": "/dificil/1/charlesManson.jpg" },
+				{ "option": "Edmund Kemper", "image": "/dificil/1/EdmundKemper.webp" }
+			],
+			"answer": "Edmund Kemper",
+			"logo":"/logo/MindHunterLogo.png"
+		},
+		{
+			"question": "¿Cuál es el nombre completo del libro de Diane Nguyen sobre BoJack Horseman que se convierte en un éxito de ventas?",
+			"options": [
+				{ "option": "One Last Thing and Then I Swear to God I’ll Shut Up", "image": "/dificil/2/horse1.jpg" },
+				{ "option": "Life in Hollywood: A Horse Tale", "image": "/dificil/2/horse2.jpg" },
+				{ "option": "BoJack Unfiltered: The Untold Story", "image": "/dificil/2/horse3.webp" }
+			],
+			"answer": "One Last Thing and Then I Swear to God I’ll Shut Up",
+			"logo":"/logo/HorsemanLogo.png"
+		},
+		{
+			"question": "En el episodio Nosedive (Caída en Picado), ¿cómo se mide el valor social de las personas?",
+			"options": [
+				{ "option": "Con comentarios escritos", "image": "/dificil/3/bm1.jpg" },
+				{ "option": "Con una puntuación en estrellas", "image": "/dificil/3/bm2.jpg" },
+				{ "option": "Con emojis de reacciones", "image": "/dificil/3/bm3.png" }
+			],
+			"answer": "Con una puntuación en estrellas",
+			"logo":"/logo/ozarkLogo.png"
+
+		},
+		{
+			"question": "¿Qué cargo político ostenta inicialmente Claire Underwood en la serie?",
+			"options": [
+				{ "option": "Directora de la Fundación Clean Water Initiative", "image": "/dificil/4/hoc1.jpg" },
+				{ "option": "Senadora", "image": "/dificil/4/hoc2.jpg" },
+				{ "option": "Secretaria de Estado", "image": "/dificil/4/hoc3.jpg" }
+			],
+			"answer": "Directora de la Fundación Clean Water Initiative",
+			"logo":"/logo/houseOfcardsLogo.png"
+
+		},
+		{
+			"question": "Sam establece una lista de metas para alcanzar su independencia. ¿Cuál de las siguientes no es una de sus metas iniciales?",
+			"options": [
+				{ "option": "Conseguir un trabajo", "image": "/dificil/5/rari1.jpg" },
+				{ "option": "Conseguir novia", "image": "/dificil/5/rari2.webp" },
+				{ "option": "Vivir solo", "image": "/dificil/5/rari3.webp" }
+			],
+			"answer": "Vivir solo",
+			"logo":"/logo/atypicalLogo.png"
+
+		}
+	]
+}

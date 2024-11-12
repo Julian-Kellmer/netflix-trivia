@@ -1,101 +1,56 @@
-import Image from "next/image";
+'use client'
+import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function Home() {
+
+export default function Page() {
+  const router = useRouter();
+
+  const [textIndex, setTextIndex] = useState(1)
+
+  const handleClickButton = () => {
+    if (textIndex != 3) {
+      setTextIndex(textIndex + 1)
+    } else {
+      router.push('/dificulty/easy');
+    }
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className=' min-w-[80vw] flex flex-col items-center'>
+      <img src="/logo/triviaNetflix.png" width={350} />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {textIndex === 1 && (
+        <div className='w-3/4 text-center'>
+          <h1>Bienvenidos a la trivia de Netflix</h1>
+          <p>El juego consta de una trivia de 15 preguntas, divididas en tres dificultades.</p>
+          <p>En caso de ganar, tendrás un año de suscripción gratis.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      )}
+
+      {textIndex === 2 && (
+        <div className='w-3/4 text-center'>
+          <h1>Para pasar de nivel</h1>
+          <p>Tienes que contestar todas las respuestas correctas de dicho nivel.</p>
+          <p>En caso de no contestar bien una pregunta, perderás una vida.</p>
+          <p>Si pierdes tus tres vidas, pierdes el juego.</p>
+        </div>
+      )}
+
+      {textIndex === 3 && (
+        <div className='w-3/4 text-center'>
+          <h1>Reglas:</h1>
+          <ul>
+            <li>Una vez seleccionada tu pregunta, no podrás cambiarla.</li>
+            <li>Tienes un total de 10 segundos para responder.</li>
+            <li>Si excedes ese tiempo, se marcará como incorrecta.</li>
+          </ul>
+        </div>
+      )}
+
+
+      <button onClick={handleClickButton} className="mt-8 p-4 border rounded border-white ">{textIndex === 3 ? "Jugar" : "Siguiente"}</button>
     </div>
   );
 }
